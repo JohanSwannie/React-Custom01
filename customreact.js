@@ -20,6 +20,14 @@ const reactElements = {
     description: "Custom React",
   },
   element2: {
+    type: "p",
+    props: {
+      id: "para",
+    },
+    description:
+      "When using custom react, please be aware that this can be dangerous!",
+  },
+  element3: {
     type: "a",
     props: {
       href: "https://facebook.com",

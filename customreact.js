@@ -3,6 +3,7 @@ function customRender(reactElement, container) {
   domElement.innerHTML = reactElement.children;
   for (const prop in reactElement.props) {
     if (prop !== "children") {
+      alert(prop);
       domElement.setAttribute(prop, reactElement.props[prop]);
     }
   }
@@ -12,10 +13,11 @@ function customRender(reactElement, container) {
 const reactElement = {
   type: "a",
   props: {
-    href: "https://google.com",
+    href: "https://facebook.com",
     target: "_blank",
+    class: "link",
   },
-  children: "Click me to visit google",
+  children: "FACEBOOK",
 };
 
 const mainContainer = document.querySelector("#root");

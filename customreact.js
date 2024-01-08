@@ -49,7 +49,61 @@ const reactElements = {
       target: "_blank",
       class: "link",
     },
-    description: "Click here for FACEBOOK",
+    description: "FACEBOOK",
+  },
+  element6: {
+    type: "a",
+    props: {
+      href: "https://google.com",
+      target: "_blank",
+      class: "link",
+    },
+    description: "GOOGLE",
+  },
+  element7: {
+    type: "a",
+    props: {
+      href: "https://linkedin.com",
+      target: "_blank",
+      class: "link",
+    },
+    description: "LINKEDIN",
+  },
+  element8: {
+    type: "a",
+    props: {
+      href: "https://github.com",
+      target: "_blank",
+      class: "link",
+    },
+    description: "GITHUB",
+  },
+  element9: {
+    type: "a",
+    props: {
+      href: "https://twitter.com",
+      target: "_blank",
+      class: "link",
+    },
+    description: "TWITTER",
+  },
+  element10: {
+    type: "a",
+    props: {
+      href: "https://instagram.com",
+      target: "_blank",
+      class: "link",
+    },
+    description: "INSTAGRAM",
+  },
+  element11: {
+    type: "a",
+    props: {
+      href: "https://whatsapp.com",
+      target: "_blank",
+      class: "link",
+    },
+    description: "WHATSAPP",
   },
 };
 

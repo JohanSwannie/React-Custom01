@@ -18,15 +18,23 @@ body {
   margin: 5.5rem 0;
 }
 
+.links {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 80vw;
+  margin: auto;
+  grid-gap: 2rem;
+}
+
 .link {
   background-color: rgb(231, 238, 238);
   color: red;
+  text-align: center;
   font-size: 15px;
   font-weight: bold;
   padding: 1rem;
   border: 1px solid navy;
   text-decoration: none;
-  margin-right: 7.75rem;
 }
 
 .link:hover {

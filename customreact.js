@@ -20,12 +20,11 @@ const reactElements = {
     description: "Custom React",
   },
   element2: {
-    type: "p",
+    type: "h2",
     props: {
-      id: "para",
+      class: "header2",
     },
-    description:
-      "When using custom react, please be aware that this can be dangerous!",
+    description: "The way React works behind the scenes",
   },
   element3: {
     type: "p",
@@ -33,9 +32,17 @@ const reactElements = {
       id: "para",
     },
     description:
-      "Therefore, take extremely good care in how you put together custom react!",
+      "When using custom react, please be aware that this can be dangerous!",
   },
   element4: {
+    type: "p",
+    props: {
+      id: "para",
+    },
+    description:
+      "Therefore, take extremely good care in how you put together custom react!",
+  },
+  element5: {
     type: "a",
     props: {
       href: "https://facebook.com",

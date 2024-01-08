@@ -1,13 +1,34 @@
 function customRender(reactElements, container) {
   for (const element in reactElements) {
-    const domElement = document.createElement(reactElements[element].type);
-    domElement.innerHTML = reactElements[element].description;
-    for (const prop in reactElements[element].props) {
-      if (prop !== "description") {
-        domElement.setAttribute(prop, reactElements[element].props[prop]);
+    if (element === "element5") {
+      const parentElement = document.createElement("div");
+      parentElement.setAttribute("class", "links");
+      for (const child in reactElements[element]) {
+        const domElement = document.createElement(
+          reactElements[element][child].type
+        );
+        domElement.innerHTML = reactElements[element][child].description;
+        for (const prop in reactElements[element][child].props) {
+          if (prop !== "description") {
+            domElement.setAttribute(
+              prop,
+              reactElements[element][child].props[prop]
+            );
+          }
+        }
+        parentElement.appendChild(domElement);
+        container.appendChild(parentElement);
       }
+    } else {
+      const domElement = document.createElement(reactElements[element].type);
+      domElement.innerHTML = reactElements[element].description;
+      for (const prop in reactElements[element].props) {
+        if (prop !== "description") {
+          domElement.setAttribute(prop, reactElements[element].props[prop]);
+        }
+      }
+      container.appendChild(domElement);
     }
-    container.appendChild(domElement);
   }
 }
 
@@ -43,67 +64,69 @@ const reactElements = {
       "Therefore, take extremely good care in how you put together custom react!",
   },
   element5: {
-    type: "a",
-    props: {
-      href: "https://facebook.com",
-      target: "_blank",
-      class: "link",
+    child1: {
+      type: "a",
+      props: {
+        href: "https://facebook.com",
+        target: "_blank",
+        class: "link",
+      },
+      description: "FACEBOOK",
     },
-    description: "FACEBOOK",
-  },
-  element6: {
-    type: "a",
-    props: {
-      href: "https://google.com",
-      target: "_blank",
-      class: "link",
+    child2: {
+      type: "a",
+      props: {
+        href: "https://twitter.com",
+        target: "_blank",
+        class: "link",
+      },
+      description: "TWITTER",
     },
-    description: "GOOGLE",
-  },
-  element7: {
-    type: "a",
-    props: {
-      href: "https://linkedin.com",
-      target: "_blank",
-      class: "link",
+    child3: {
+      type: "a",
+      props: {
+        href: "https://instagram.com",
+        target: "_blank",
+        class: "link",
+      },
+      description: "INSTAGRAM",
     },
-    description: "LINKEDIN",
-  },
-  element8: {
-    type: "a",
-    props: {
-      href: "https://github.com",
-      target: "_blank",
-      class: "link",
+    child4: {
+      type: "a",
+      props: {
+        href: "https://whatsapp.com",
+        target: "_blank",
+        class: "link",
+      },
+      description: "WHATSAPP",
     },
-    description: "GITHUB",
-  },
-  element9: {
-    type: "a",
-    props: {
-      href: "https://twitter.com",
-      target: "_blank",
-      class: "link",
+    child5: {
+      type: "a",
+      props: {
+        href: "https://linkedin.com",
+        target: "_blank",
+        class: "link",
+      },
+      description: "LINKEDIN",
     },
-    description: "TWITTER",
-  },
-  element10: {
-    type: "a",
-    props: {
-      href: "https://instagram.com",
-      target: "_blank",
-      class: "link",
+    child6: {
+      type: "a",
+      props: {
+        href: "https://github.com",
+        target: "_blank",
+        class: "link",
+      },
+      description: "GITHUB",
     },
-    description: "INSTAGRAM",
-  },
-  element11: {
-    type: "a",
-    props: {
-      href: "https://whatsapp.com",
-      target: "_blank",
-      class: "link",
+    child7: {
+      type: "a",
+      props: {
+        href: "https://google.com",
+        target: "_blank",
+        class: "link",
+      },
+      description: "GOOGLE",
     },
-    description: "WHATSAPP",
   },
 };
 

@@ -15,7 +15,7 @@ body {
 
 #para {
   font-size: 1.65rem;
-  margin: 5.5rem 0;
+  margin: 3.5rem 0;
 }
 
 .links {
@@ -24,6 +24,7 @@ body {
   width: 80vw;
   margin: auto;
   grid-gap: 2rem;
+  margin-top: 10rem;
 }
 
 .link {

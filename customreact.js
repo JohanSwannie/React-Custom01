@@ -17,7 +17,7 @@ const reactElement = {
     target: "_blank",
     class: "link",
   },
-  children: "FACEBOOK",
+  children: "Click here for FACEBOOK",
 };
 
 const mainContainer = document.querySelector("#root");

@@ -1,9 +1,9 @@
 function customRender(reactElements, container) {
   for (const element in reactElements) {
     const domElement = document.createElement(reactElements[element].type);
-    domElement.innerHTML = reactElements[element].children;
+    domElement.innerHTML = reactElements[element].description;
     for (const prop in reactElements[element].props) {
-      if (prop !== "children") {
+      if (prop !== "description") {
         domElement.setAttribute(prop, reactElements[element].props[prop]);
       }
     }
@@ -17,7 +17,7 @@ const reactElements = {
     props: {
       class: "header",
     },
-    children: "Custom React",
+    description: "Custom React",
   },
   element2: {
     type: "a",
@@ -26,7 +26,7 @@ const reactElements = {
       target: "_blank",
       class: "link",
     },
-    children: "Click here for FACEBOOK",
+    description: "Click here for FACEBOOK",
   },
 };
 

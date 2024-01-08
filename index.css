@@ -3,6 +3,10 @@
   text-decoration: underline;
 }
 
+#para {
+  text-align: center;
+}
+
 .link {
   position: absolute;
   top: 50%;

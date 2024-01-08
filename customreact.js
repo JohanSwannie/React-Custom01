@@ -28,6 +28,14 @@ const reactElements = {
       "When using custom react, please be aware that this can be dangerous!",
   },
   element3: {
+    type: "p",
+    props: {
+      id: "para",
+    },
+    description:
+      "Therefore, take extremely good care in how you put together custom react!",
+  },
+  element4: {
     type: "a",
     props: {
       href: "https://facebook.com",

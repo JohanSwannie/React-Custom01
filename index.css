@@ -1,7 +1,12 @@
+body {
+  background-color: rgb(2, 48, 33);
+}
+
 .header,
 .header2,
 #para {
   text-align: center;
+  color: #fff;
 }
 
 .header {
@@ -25,6 +30,6 @@
 }
 
 .link:hover {
-  background-color: navy;
+  background-color: crimson;
   color: #fff;
 }
